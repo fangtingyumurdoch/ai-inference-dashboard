@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react';
+import { useEffect } from 'react';
 import { ImageUpload } from '@/app/ImageUpload';
 import { PivasResultCard } from '@/app/ResultDisplay';
 import { ImageGallery, type UploadedImage } from '@/app/ImageGallery';
@@ -60,6 +61,19 @@ export default function App() {
     },
     []
   );
+
+  // This function here is to test weather the API to backend is working
+  // check console output
+  useEffect(() => {
+    fetch('http://localhost:8000/models')
+      .then((res) => res.json())
+      .then((data) => {
+        console.log('Backend Connected:', data);
+      })
+      .catch((err) => {
+        console.error('Connection Failed:', err);
+      });
+  }, []);
 
   const handleDeleteImage = useCallback((id: string) => {
     setImages((prev) => prev.filter((img) => img.id !== id));
