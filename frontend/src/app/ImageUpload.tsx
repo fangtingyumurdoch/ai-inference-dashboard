@@ -1,9 +1,9 @@
 import { useCallback, useState } from 'react';
 import { Upload, X } from 'lucide-react';
-import { Button } from '@/app/components/ui/button';
-import { Card } from '@/app/components/ui/card';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/app/components/ui/select';
-import { Label } from '@/app/components/ui/label';
+import { Button } from '@/app/ui/button';
+import { Card } from '@/app/ui/card';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/app/ui/select';
+import { Label } from '@/app/ui/label';
 
 interface ImageUploadProps {
   onImageUpload: (file: File, preview: string, model: string) => void;

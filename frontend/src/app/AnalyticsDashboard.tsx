@@ -14,7 +14,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/app/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/app/ui/card';
 import { Image, HardDrive, Calendar, FileType } from 'lucide-react';
 import type { UploadedImage } from './ImageGallery';
 

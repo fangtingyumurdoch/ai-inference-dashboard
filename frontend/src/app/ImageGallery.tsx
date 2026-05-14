@@ -1,6 +1,6 @@
 import { X } from 'lucide-react';
-import { Button } from '@/app/components/ui/button';
-import { Card } from '@/app/components/ui/card';
+import { Button } from '@/app/ui/button';
+import { Card } from '@/app/ui/card';
 
 export interface UploadedImage {
   id: string;

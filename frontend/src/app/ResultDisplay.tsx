@@ -1,4 +1,4 @@
-import { Card } from '@/app/components/ui/card';
+import { Card } from '@/app/ui/card';
 
 type PivasResult = 'PIVAS0' | 'PIVAS1' | 'PIVAS2';
 
